@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Stepmedia Exercise</h2>
+  <form class="row mt-5" [formGroup]="inputForm" (ngSubmit)="submitInputForm()">
+    <div class="col-8">
+      <input class="form-control" placeholder="Input a list number separate by commas" type="input" formControlName="input" [class.is-invalid]="input?.invalid && (input?.dirty || input?.touched)" [class.is-valid]="input?.valid">
+      <div class="font-italic">
+        <span class="text-success" *ngIf = "input?.valid">Look good!!!</span>
+        <span class="text-danger"  *ngIf = "input?.invalid && (input?.dirty || input?.touched)">Invalid!!! Please use the correct format (Ex: 1,2,3,4)</span>
+    </div>
+    </div>
+   
+    <div class="col-auto">
+      <button class="btn btn-success" type="submit">Calculate</button>
+    </div>
+  </form>
+  <div class="card mt-5">
+    <div class="card-body">
+      <h5 class="card-title">Output</h5>
+      <p class="card-text">{{output}}</p>
+    </div>
+  </div>
+</div>

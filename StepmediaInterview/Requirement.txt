@@ -1,0 +1,2 @@
+FE (web có thể dùng javascript / mvc / angular/ viewjs/ reactjs..): cho phép user nhập vào 1 dãy số, giữa các số cách nhau bởi dấu phẩy (,) => submit về server
+BE (.net hoặc .netcore): nhận dãy số và sắp xếp theo qui luật: 10 số lớn nhất nằm ở vị trí giữa dãy số, 10 số lớn tiếp theo nằm ở khu vực đầu dãy số, 10 số lớn tiếp theo nữa sẽ nằm ở khu vực cuối dãy số, các số còn lại không thuộc 3 khu vực trên. Lưu ý số lượng các số trước và sau sắp xếp là không thay đổi.
